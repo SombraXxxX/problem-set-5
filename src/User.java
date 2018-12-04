@@ -16,7 +16,7 @@ public class User {
 	private String lastName;
 	private String firstName;
 	private String dob;
-	private int phonenumber;
+	private long phonenumber;
 	private String streetaddress;
 	private String city;
 	private String state;
@@ -29,7 +29,7 @@ public class User {
 	 * @param address
 	 */
 	
-	public User(int pin, String firstName, String lastName, String dob, String streetaddress, int phonenumber, String city, String state, String postalcode) {
+	public User(int pin, String firstName, String lastName, String dob, String streetaddress, long phonenumber, String city, String state, String postalcode) {
 		this.pin = pin;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -84,7 +84,7 @@ public class User {
 	public String getstreetaddress() {
 		return streetaddress;
 	}
-	public int getphonenumber() {
+	public long getphonenumber() {
 		return phonenumber;
 	}
 	public String getcity() {
@@ -138,7 +138,7 @@ public class User {
 	public void setstreetaddress(String streetaddress) {
 		this.streetaddress = streetaddress;
 	}
-	public void setphonenumber(int phonenumber) {
+	public void setphonenumber(long phonenumber) {
 		this.phonenumber = phonenumber;
 	}
 	public void setcity(String city) {

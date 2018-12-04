@@ -33,6 +33,28 @@ public class BankAccount {
 	
 	/////////////////////////////////// GETTERS AND SETTERS ///////////////////////////////////
 	
+	public BankAccount(String account) {
+		long accountnumber = Long.parseLong(account.substring(0,9));
+		int pin = Integer.parseInt(account.substring(9, 13));
+		int balance = Integer.parseInt(account.substring(13, 28));
+		String lastname = account.substring(28, 48);
+		String firstname = account.substring(48, 63);
+		String dob = account.substring(63, 71);
+		long phone = Long.parseLong(account.substring(71, 81));
+		String address = account.substring(81, 111).trim();
+		String city = account.substring(111, 141).trim();
+		String state = account.substring(141, 143);
+		String postal = account.substring(143, 148);
+		char status = account.charAt(148);
+		
+		this.accountNumber 
+		this.balance
+		this.user = new User();
+		
+		//process line
+		//build account from parsed data
+	}
+
 	/**
 	 * Retrieves the account number.
 	 * 
